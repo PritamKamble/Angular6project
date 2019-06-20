@@ -3,15 +3,18 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CreateEmployeeComponent } from './employee/create-employee.component';
-import { ListEmployeesComponent } from './employee/list-employees.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TestComponent } from './test/test.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
+import { EmployeeService } from './services/employee.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateEmployeeComponent,
-    ListEmployeesComponent
+    TestComponent,
+    EmployeeComponent,
+    EmployeedetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
