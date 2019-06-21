@@ -9,18 +9,18 @@ import { Router } from '@angular/router';
 export class DepartmentComponent implements OnInit {
 
   departments = [
-    { 'id': 1, 'name': 'Angular'},
-    { 'id': 2, 'name': 'Node'},
-    { 'id': 3, 'name': 'MongoDB'},
-    { 'id': 4, 'name': 'javaScript'},
-    { 'id': 5, 'name': 'bootstrap'}
+    { ' id ': 1, ' name ': 'Angular'},
+    { ' id ': 2, ' name ': 'Node'},
+    { ' id ': 3, ' name ': 'MongoDB'},
+    { ' id ': 4, ' name ': 'javaScript'},
+    { ' id ': 5, ' name ': 'bootstrap'}
   ];
 
-  onSelect(department){
-    this.router.navigate(['/departments',department.id]);
+  onSelect(department) {
+    this.router.navigate(['/departments', department.id]);
   }
 
-  constructor(private router : Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
